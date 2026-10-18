@@ -167,3 +167,16 @@ footer span { color: #22d3ee; padding: 0 6px; }
   .level-details strong { font-size: 22px; }
   .chart { height: 250px; }
 }
+
+.download-button:disabled { opacity: .65; cursor: wait; }
+.status-pill.stale { color: #fbbf24; background: #33280e; }
+.status-pill.offline, .status-pill.no-data { color: #fca5a5; background: #3b1b22; }
+.status-strip { display: flex; flex-wrap: wrap; gap: 18px 28px; margin: 0 0 18px; padding: 15px 18px; }
+.status-strip > div { display: flex; align-items: center; gap: 9px; color: #8ca4ba; font-size: 12px; }
+.status-strip svg { color: #22d3ee; flex-shrink: 0; }
+.status-strip strong { color: #d6e5f1; }
+.fall-value { color: #fbbf24; font-weight: 700; }
+.metric-content h2 { overflow-wrap: anywhere; }
+.metrics-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+@media (max-width: 1100px) { .status-strip { align-items: flex-start; flex-direction: column; gap: 12px; } }
+@media (max-width: 760px) { .top-actions { align-items: flex-start; } .download-button { white-space: nowrap; } }
